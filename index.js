@@ -12,7 +12,8 @@ const lengthConversion = document.getElementById("length-conversion");
 const massConversion = document.getElementById("mass-conversion");
 
 
-
+const minWidth = 2.4;
+inputElement.style.width = `${minWidth}em`;
 
 //EVENT LISTENERS
 
@@ -36,4 +37,12 @@ convertBtn.addEventListener("click", () => {
         massConversion.textContent = "";
     }
 
+});
+
+
+inputElement.addEventListener('input', (event) => {
+    const valueLength = event.target.value.length;
+    
+    // Set a minimum width and add a factor for each character
+    event.target.style.width = `${Math.max(minWidth, valueLength * 0.7)}em`;
 });
