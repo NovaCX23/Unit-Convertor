@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F4;
+}
+
+#header{
+    background-color: #6943FF;
+    height: 230px;
+    margin-top: -30px;
+    padding: 20px; 
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFFFFF
+}
+
+#title {
+    font-size: 2.3em;
+    font-weight: bold;
+    text-shadow: 0 0 2px #090909;
+}
+
+#input-element {
+    width: 2.4em;
+    height: 1.6em;
+    margin-bottom: 20px;
+    font-size: 3rem;
+
+    text-align: center;
+    
+    border-radius: 5px;
+    border: 2px solid #B295FF;
+    box-sizing: border-box;
+
+    color: #FFFFFF;
+    background-color: #6943FF;
+}
+#input-element::placeholder {
+    color: #bdbdbdb8;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Hides the arrows in Firefox
+input[type=number] {
+    -moz-appearance: textfield;
+} */
+
+#convert-button {
+    width: 7.1em;
+    height: 2.5em;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+#convert-button:hover {
+    background-color: #B295FF;
+    transition: background-color 0.3s ease;
+}
+
+#conversions{
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.1rem;
+}
+
+.container{
+    width: 1100px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.container h3{
+    color: #5A537B;
+}
+.container p{
+    color: #353535;
+    min-height: 3px;
+}
